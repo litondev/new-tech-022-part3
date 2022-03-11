@@ -1,187 +1,188 @@
-2022-03-11 15:03:01,392 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-03-11 15:03:01,393 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:03:11,658 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:03:11,765 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:03:20,894 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:03:21,014 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:03:24,010 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:03:24,157 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:03:32,354 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:03:32,477 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:12:56,284 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-03-11 15:12:56,285 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:14:16,636 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:14:16,744 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:14:19,687 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-03-11 15:14:19,688 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:14:43,480 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 15:14:43] "[33mGET / HTTP/1.1[0m" 404 -
-2022-03-11 15:14:51,055 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 15:14:51] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 15:14:55,969 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 15:14:55] "[31m[1mPOST /signup HTTP/1.1[0m" 422 -
-2022-03-11 15:15:44,902 WARNING main Thread-6 : can't concat str to bytes
-2022-03-11 15:15:44,903 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 15:15:44] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
-2022-03-11 15:16:14,059 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:16:14,192 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:16:16,700 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 15:16:16] "POST /signup HTTP/1.1" 200 -
-2022-03-11 15:16:32,543 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 15:16:32] "POST /forgot-password HTTP/1.1" 200 -
-2022-03-11 15:16:38,575 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 15:16:38] "[31m[1mPOST /forgot-password HTTP/1.1[0m" 422 -
-2022-03-11 15:16:41,586 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 15:16:41] "POST /forgot-password HTTP/1.1" 200 -
-2022-03-11 15:17:02,048 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:17:02,212 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:17:03,890 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 15:17:03] "POST /forgot-password HTTP/1.1" 200 -
-2022-03-11 15:18:01,794 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:18:01,969 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:18:41,608 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:18:41,726 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:18:53,077 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:18:53,212 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:18:57,243 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:18:57,362 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:18:59,171 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 15:18:59] "POST /forgot-password HTTP/1.1" 200 -
-2022-03-11 15:19:54,252 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:19:54,381 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:20:05,655 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/seeders/user_seeder.py', reloading
-2022-03-11 15:20:05,789 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:26:05,432 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-03-11 15:26:05,433 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:26:23,936 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:26:24,075 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:26:39,452 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:26:39,559 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:27:14,529 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:27:14,646 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:27:20,702 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:27:20,812 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:28:11,261 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:28:11,390 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:29:36,012 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:29:36,119 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:29:42,305 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:29:42,408 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:29:53,632 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:29:53,760 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:29:57,638 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:29:57,743 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:30:05,906 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:30:06,017 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:30:25,528 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:30:25,652 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:30:54,548 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:30:54,666 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:31:23,485 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:31:23,594 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:31:29,620 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:31:29,732 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:31:32,749 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:31:32,859 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:31:43,165 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:31:43,276 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:32:00,660 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:32:00,790 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:32:02,935 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/reset_password_validator.py', reloading
-2022-03-11 15:32:03,053 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:33:16,375 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:33:16,489 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:33:36,368 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:33:36,500 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:33:41,423 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:33:41,554 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:34:58,891 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:34:59,022 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:01,048 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:01,144 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:02,965 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:03,067 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:12,142 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:12,250 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:28,607 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:28,713 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:43,204 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:43,313 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:48,318 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:48,424 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:35:50,318 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 15:35:50,415 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:55:57,553 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-03-11 15:55:57,554 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:57:15,820 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/app.py', reloading
-2022-03-11 15:57:15,991 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:57:17,987 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/app.py', reloading
-2022-03-11 15:57:18,092 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:57:21,218 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/app.py', reloading
-2022-03-11 15:57:21,362 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 15:57:22,311 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 15:57:22] "GET / HTTP/1.1" 200 -
-2022-03-11 15:57:33,278 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 15:57:33] "[33mGET /signup HTTP/1.1[0m" 404 -
-2022-03-11 15:57:53,178 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 15:57:53] "POST /signup HTTP/1.1" 200 -
-2022-03-11 15:58:02,724 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 15:58:02] "POST /forgot-password HTTP/1.1" 200 -
-2022-03-11 15:58:10,360 INFO werkzeug Thread-7 : 127.0.0.1 - - [11/Mar/2022 15:58:10] "[31m[1mPOST /reset-password HTTP/1.1[0m" 422 -
-2022-03-11 15:58:31,827 INFO werkzeug Thread-8 : 127.0.0.1 - - [11/Mar/2022 15:58:31] "[31m[1mPOST /reset-password HTTP/1.1[0m" 422 -
-2022-03-11 15:58:36,675 INFO werkzeug Thread-9 : 127.0.0.1 - - [11/Mar/2022 15:58:36] "[31m[1mPOST /reset-password HTTP/1.1[0m" 422 -
-2022-03-11 15:58:42,954 INFO werkzeug Thread-10 : 127.0.0.1 - - [11/Mar/2022 15:58:42] "POST /reset-password HTTP/1.1" 200 -
-2022-03-11 15:58:49,548 WARNING main Thread-11 : Unicode-objects must be encoded before checking
-2022-03-11 15:58:49,550 INFO werkzeug Thread-11 : 127.0.0.1 - - [11/Mar/2022 15:58:49] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:00:06,338 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:00:06,455 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:00:14,612 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:00:14,746 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:00:19,417 WARNING main Thread-3 : Object of type bytes is not JSON serializable
-2022-03-11 16:00:19,419 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:00:19] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:00:54,041 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:00:54,162 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:01:00,443 WARNING main Thread-3 : Object of type bytes is not JSON serializable
-2022-03-11 16:01:00,445 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:01:00] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:01:06,566 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:01:06,695 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:01:08,142 WARNING main Thread-3 : Object of type bytes is not JSON serializable
-2022-03-11 16:01:08,144 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:01:08] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:01:18,179 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:01:18,303 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:01:20,341 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:01:20,468 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:01:23,345 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:01:23,468 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:01:25,667 WARNING main Thread-3 : Object of type bytes is not JSON serializable
-2022-03-11 16:01:25,669 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:01:25] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:01:32,787 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:01:32,928 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:02:36,020 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:02:36,148 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:02:39,791 WARNING main Thread-3 : 'bytes' object has no attribute 'encode'
-2022-03-11 16:02:39,793 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:02:39] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:02:48,781 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:02:48,911 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:02:50,633 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:02:50] "POST /signin HTTP/1.1" 200 -
-2022-03-11 16:03:07,467 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:03:07,643 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:04:46,662 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:04:46,786 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:04:48,679 WARNING main Thread-3 : Object of type User is not JSON serializable
-2022-03-11 16:04:48,680 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:04:48] "[35m[1mPOST /signin HTTP/1.1[0m" 500 -
-2022-03-11 16:04:56,645 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:04:56,786 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:04:59,524 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:04:59] "POST /signin HTTP/1.1" 200 -
-2022-03-11 16:05:21,121 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 16:05:21] "[31m[1mGET /me HTTP/1.1[0m" 422 -
-2022-03-11 16:05:32,003 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 16:05:32] "GET /me HTTP/1.1" 200 -
-2022-03-11 16:09:26,330 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/models/user.py', reloading
-2022-03-11 16:09:26,462 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:09:36,744 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/models/user.py', reloading
-2022-03-11 16:09:36,858 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:10:11,870 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:10:11,990 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:10:14,520 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-03-11 16:10:14,521 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:10:22,445 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:10:22] "POST /signin HTTP/1.1" 200 -
-2022-03-11 16:10:43,450 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:10:43,579 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:11:09,342 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:11:09,470 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:11:11,518 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:11:11,672 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:11:20,142 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 16:11:20] "GET /me HTTP/1.1" 200 -
-2022-03-11 16:11:26,103 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/models/user.py', reloading
-2022-03-11 16:11:26,238 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:11:33,387 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:11:33,527 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:11:36,623 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:11:36,750 INFO werkzeug MainThread :  * Restarting with stat
-2022-03-11 16:11:40,809 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
-2022-03-11 16:11:40,939 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:51:05,586 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-11 19:51:05,594 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:51:34,509 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 19:51:34] "[31m[1mPOST /signin HTTP/1.1[0m" 422 -
+2022-03-11 19:52:04,995 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 19:52:04] "[31m[1mPOST /signin HTTP/1.1[0m" 422 -
+2022-03-11 19:52:10,988 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 19:52:10] "POST /signin HTTP/1.1" 200 -
+2022-03-11 19:52:27,192 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 19:52:27] "[31m[1mGET /me HTTP/1.1[0m" 422 -
+2022-03-11 19:52:30,120 INFO werkzeug Thread-7 : 127.0.0.1 - - [11/Mar/2022 19:52:30] "[31m[1mGET /me HTTP/1.1[0m" 422 -
+2022-03-11 19:52:34,692 INFO werkzeug Thread-8 : 127.0.0.1 - - [11/Mar/2022 19:52:34] "GET /me HTTP/1.1" 200 -
+2022-03-11 19:52:46,143 INFO werkzeug Thread-9 : 127.0.0.1 - - [11/Mar/2022 19:52:46] "[33mGET /profil/data HTTP/1.1[0m" 404 -
+2022-03-11 19:52:49,430 INFO werkzeug Thread-10 : 127.0.0.1 - - [11/Mar/2022 19:52:49] "[31m[1mPOST /profil/data HTTP/1.1[0m" 422 -
+2022-03-11 19:53:31,715 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:53:31,846 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:53:34,127 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 19:53:34] "POST /profil/data HTTP/1.1" 200 -
+2022-03-11 19:53:40,188 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 19:53:40] "[31m[1mPOST /profil/data HTTP/1.1[0m" 422 -
+2022-03-11 19:53:44,682 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 19:53:44] "POST /profil/data HTTP/1.1" 200 -
+2022-03-11 19:53:47,754 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 19:53:47] "POST /profil/data HTTP/1.1" 200 -
+2022-03-11 19:53:54,845 INFO werkzeug Thread-7 : 127.0.0.1 - - [11/Mar/2022 19:53:54] "GET /me HTTP/1.1" 200 -
+2022-03-11 19:54:00,716 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:54:00,853 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:54:07,970 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:54:08,086 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:54:49,185 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:54:49,303 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:54:53,270 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:54:53,382 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:55:02,494 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:55:02,601 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:55:28,246 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:55:28,362 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:55:44,804 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/profil_update_password_validator.py', reloading
+2022-03-11 19:55:44,986 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:56:08,022 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/profil_update_password_validator.py', reloading
+2022-03-11 19:56:08,137 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:56:15,255 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/profil_update_password_validator.py', reloading
+2022-03-11 19:56:15,367 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:56:21,454 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/profil_update_password_validator.py', reloading
+2022-03-11 19:56:21,566 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:56:31,690 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/validators/profil_update_password_validator.py', reloading
+2022-03-11 19:56:31,801 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:56:59,603 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:56:59,715 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:57:27,492 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:57:27,602 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:57:34,686 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:57:34,798 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:58:04,567 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:58:04,675 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:58:31,274 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:58:31,388 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:58:39,482 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:58:39,588 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:58:41,728 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:58:41,851 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:58:46,900 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:58:47,013 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:58:49,140 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 19:58:49,249 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 19:59:15,626 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 19:59:15] "[31m[1mPOST /profil/password HTTP/1.1[0m" 422 -
+2022-03-11 19:59:25,066 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 19:59:25] "POST /profil/password HTTP/1.1" 200 -
+2022-03-11 19:59:31,786 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 19:59:31] "POST /profil/password HTTP/1.1" 200 -
+2022-03-11 20:03:58,071 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:03:58,198 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:04:59,042 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:04:59,162 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:05:10,348 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:05:10,455 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:05:12,454 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:05:12,573 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:05:20,699 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:05:20,818 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:05:49,587 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:05:49,708 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:05:54,818 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:05:54,928 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:06:13,400 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:06:13,559 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:06:23,751 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:06:23,886 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:06:43,412 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:06:43,531 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:07:30,895 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:07:31,002 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:07:33,970 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:07:34,095 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:10:34,648 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:10:34,781 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:11:08,212 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:11:08,339 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:11:10,417 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:11:10,537 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:11:28,063 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:11:28,181 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:11:38,441 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:11:38,556 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:11:45,639 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:11:45,748 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:12:11,684 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:12:11] "[35m[1mPOST /profil/photo HTTP/1.1[0m" 500 -
+2022-03-11 20:12:33,075 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:12:33,239 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:12:35,504 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:12:35] "[35m[1mPOST /profil/photo HTTP/1.1[0m" 500 -
+2022-03-11 20:12:46,622 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:12:46,747 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:14:31,912 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:14:32,031 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:14:39,227 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:14:39,360 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:14:44,434 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:14:44,563 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:14:46,085 WARNING main Thread-3 : 'UPLOAD_FOLDER'
+2022-03-11 20:14:46,086 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:14:46] "[35m[1mPOST /profil/photo HTTP/1.1[0m" 500 -
+2022-03-11 20:15:05,197 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:15:05,337 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:15:07,932 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:15:07] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:17:42,870 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:17:43,000 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:18:02,587 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:18:02,734 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:18:35,911 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:18:36,045 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:18:38,111 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:18:38] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:20:09,930 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:20:10,085 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:20:12,674 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:20:12] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:21:12,283 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:21:12,413 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:21:17,480 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:21:17] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:22:29,715 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:22:29,839 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:22:31,581 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:22:31] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:22:45,465 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:22:45,585 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:22:47,313 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:22:47] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:23:51,688 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:23:51,819 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:23:54,713 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:23:54] "[35m[1mPOST /profil/photo HTTP/1.1[0m" 500 -
+2022-03-11 20:24:05,245 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:24:05,439 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:24:09,563 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:24:09,683 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:24:10,947 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:24:10] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:24:39,548 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:24:39,665 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:25:55,952 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:25:56,082 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:26:02,267 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:26:02,390 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:26:16,791 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:26:16,919 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:26:34,399 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:26:34,548 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:26:58,229 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:26:58,341 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:27:08,661 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:27:08,807 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:27:11,172 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:27:11] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:27:11,740 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 20:27:11] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:27:27,131 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 20:27:27] "[31m[1mPOST /profil/photo HTTP/1.1[0m" 422 -
+2022-03-11 20:27:48,163 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:27:48,277 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:27:50,219 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:27:50,374 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:27:52,118 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:27:52] "[31m[1mPOST /profil/photo HTTP/1.1[0m" 422 -
+2022-03-11 20:28:01,076 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 20:28:01] "[31m[1mPOST /profil/photo HTTP/1.1[0m" 422 -
+2022-03-11 20:28:06,097 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 20:28:06] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:28:09,067 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 20:28:09] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:29:55,542 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:29:55,662 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:30:34,989 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:30:35,111 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:30:38,222 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:30:38,334 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:30:48,532 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:30:48,713 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:30:57,027 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:30:57,192 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:32:11,806 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:32:11] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:32:15,540 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 20:32:15] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:34:17,348 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:34:17,463 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:34:24,625 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/profil.py', reloading
+2022-03-11 20:34:24,792 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:34:30,714 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-11 20:34:30,714 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 20:34:44,987 INFO werkzeug Thread-3 : 127.0.0.1 - - [11/Mar/2022 20:34:44] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:34:47,500 INFO werkzeug Thread-4 : 127.0.0.1 - - [11/Mar/2022 20:34:47] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:34:49,001 INFO werkzeug Thread-5 : 127.0.0.1 - - [11/Mar/2022 20:34:49] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:34:50,045 INFO werkzeug Thread-6 : 127.0.0.1 - - [11/Mar/2022 20:34:50] "POST /profil/photo HTTP/1.1" 200 -
+2022-03-11 20:34:57,647 INFO werkzeug Thread-7 : 127.0.0.1 - - [11/Mar/2022 20:34:57] "GET /me HTTP/1.1" 200 -

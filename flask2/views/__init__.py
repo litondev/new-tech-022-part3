@@ -1,4 +1,5 @@
 from views.auth import Auth
+from views.profil import Profil
 
 user_web_auth = Auth()
 """
@@ -8,4 +9,11 @@ user_web_auth = Auth()
  - /reset-password (POST)
  - /logout (POST)
  - /me (GET)
+"""
+
+user_web_profil = Profil()
+"""
+ - /profil/data (POST)
+ - /profil/password (POST)
+ - /profil/photo (POST)
 """
