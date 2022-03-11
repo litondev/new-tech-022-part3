@@ -23,9 +23,11 @@ if len(sys.argv) == 3:
     if sys.argv[1] == "seed" and sys.argv[2] == "run":
         RunSeeder(db,user=User,product=Product)
 else:
-    @app.route("/")
-    def index():
-        return "Hello World!"
+    import views
+    
+    # @app.route("/")
+    # def index():
+    #     return "Hello World!"
         
     if __name__ == "__main__":
         app.run()
