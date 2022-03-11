@@ -1,0 +1,10 @@
+2022-03-11 15:03:01,392 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-11 15:03:01,393 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 15:03:11,658 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
+2022-03-11 15:03:11,765 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 15:03:20,894 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
+2022-03-11 15:03:21,014 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 15:03:24,010 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
+2022-03-11 15:03:24,157 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-11 15:03:32,354 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-003-part3/flask2/views/auth.py', reloading
+2022-03-11 15:03:32,477 INFO werkzeug MainThread :  * Restarting with stat
