@@ -11,6 +11,7 @@
     "@vee-validate/rules": "^4.5.10",
     "axios": "^0.26.1",
     "vee-validate": "^4.5.10",
+    "vite-plugin-environment": "^1.1.0",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
