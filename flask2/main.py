@@ -12,7 +12,6 @@ app = Flask(
     static_url_path='', 
     static_folder='static'
 )
-
 logging.basicConfig(
     filename='logging.log', 
     level=logging.WARNING, 
@@ -21,5 +20,6 @@ logging.basicConfig(
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://"+ os.getenv("DB_USERNAME") + ":" + os.getenv("DB_PASSWORD") + "@" + os.getenv("DB_HOST") + "/" + os.getenv("DB_DATABASE")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config['SECRET_KEY']='004f2af45d3a4e161a7dd2d17fdae47f'
 
 db = SQLAlchemy(app)

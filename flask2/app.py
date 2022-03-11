@@ -25,9 +25,9 @@ if len(sys.argv) == 3:
 else:
     import views
     
-    # @app.route("/")
-    # def index():
-    #     return "Hello World!"
+    @app.route("/")
+    def index():
+        return "Oke"
         
     if __name__ == "__main__":
         app.run()

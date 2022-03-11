@@ -52,6 +52,9 @@ class User(db.Model):
       self.email = email
       self.password = password    
       self.photo = photo
- 
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+       
     def __repr__(self):     
       return '<User name={self.name} email={self.email}  password={self.password} photo={self.photo} remember_token={self.remember_token}>'

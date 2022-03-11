@@ -7,6 +7,9 @@ from models import User
 from flask import jsonify,make_response, request
 from main import db
 import bcrypt
+import datetime 
+import jwt 
+from middlewares import is_login
 
 class Auth:
     @app.route("/signin",methods=["POST"])
@@ -24,12 +27,20 @@ class Auth:
             if user == None:
                 return make_response(jsonify({"message" : "Email tidak ditemukan"}),422)
 
-            if(bcrypt.checkpw(bytes(request.form['password'].encode("utf-8")),user.password) == False):
+            if(bcrypt.checkpw(bytes(request.form['password'].encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
                 return make_response(jsonify({"message" : "Password tidak valid"}),422)
+                    
             
-            # JWT
-
-            return make_response(jsonify({"message" : True}), 200)
+            token = jwt.encode({
+                'sub' : user.id, 
+                'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=45)
+            },app.config['SECRET_KEY'], "HS256")             
+        
+            return make_response(jsonify({
+                "message" : True,
+                "user" : user.as_dict(),
+                "token" : token.decode("utf-8")
+            }), 200)
         except Exception as e:            
             print(e)
 
@@ -137,10 +148,13 @@ class Auth:
         return make_response(jsonify({"message" : "Reset Password"}), 200)
     
     @app.route("/me",methods=["GET"])
-    def auth_me():
-        return make_response(jsonify({"message" : "Me"}), 200)
+    @is_login	
+    def auth_me(jwt_decode):
+        print(jwt_decode)
+        user = User.query.filter_by(id=jwt_decode['sub']).first()
+        return make_response(jsonify(user.as_dict()), 200)
 
     @app.route("/logout",methods=["POST"])
     def auth_logout():
-        return make_response(jsonify({"message" : "Logout"}), 200)
+        return make_response(jsonify({"message" : True}), 200)
     
