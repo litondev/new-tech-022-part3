@@ -19,6 +19,11 @@ class User(db.Model):
             index=True
         )
 
+    remember_token = db.Column( 
+            db.Text,
+            nullable=True
+    )
+
     password = db.Column(
             db.Text,
             nullable=False
@@ -49,4 +54,4 @@ class User(db.Model):
       self.photo = photo
  
     def __repr__(self):     
-      return '<User name={self.name} email={self.email}  password={self.password} photo={self.photo}>'
+      return '<User name={self.name} email={self.email}  password={self.password} photo={self.photo} remember_token={self.remember_token}>'
