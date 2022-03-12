@@ -10,13 +10,17 @@ from werkzeug.utils import secure_filename
 import os
 import string
 import random
+from werkzeug.datastructures import ImmutableMultiDict
 
 class Profil:
     @app.route("/profil/data",methods=["POST"])
     @is_login
     def profil_data(jwt_decode):
         try:
-            form = ProfilUpdateDataValidation(request.form)
+            if not request.is_json:
+                form = ProfilUpdateDataValidation(request.form)
+            else: 
+                form = ProfilUpdateDataValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
@@ -24,7 +28,7 @@ class Profil:
                 }),422)
 
             user_email = User.query.filter(
-                User.email == request.form['email'],
+                User.email == form.email.data,
                 User.id != jwt_decode['sub']
             ).count();
             
@@ -35,11 +39,11 @@ class Profil:
 
             user = User.query.filter_by(id=jwt_decode['sub']).first()
 
-            if(bcrypt.checkpw(bytes(request.form['password'].encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
+            if(bcrypt.checkpw(bytes(form.password.data.encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
                 return make_response(jsonify({"message" : "Password tidak valid"}),422)                                
                     
-            user.name = request.form["name"]
-            user.email = request.form["email"]
+            user.name = form.name.data
+            user.email = form.email.data
 
             db.session.commit() 
 
@@ -57,7 +61,10 @@ class Profil:
     @is_login
     def profil_password(jwt_decode):
         try:
-            form = ProfilUpdatePasswordValidation(request.form)
+            if not request.is_json:
+                form = ProfilUpdatePasswordValidation(request.form)
+            else: 
+                form = ProfilUpdatePasswordValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
@@ -66,10 +73,10 @@ class Profil:
           
             user = User.query.filter_by(id=jwt_decode['sub']).first()
 
-            if(bcrypt.checkpw(bytes(request.form['password_confirmation'].encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
+            if(bcrypt.checkpw(bytes(form.password_confirmation.data.encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
                 return make_response(jsonify({"message" : "Password tidak valid"}),422)                                
                     
-            user.password = bcrypt.hashpw(bytes(request.form['password'].encode("utf-8")), bcrypt.gensalt())
+            user.password = bcrypt.hashpw(bytes(form.password.encode("utf-8")), bcrypt.gensalt())
 
             db.session.commit() 
 

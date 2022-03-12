@@ -1,6 +1,4 @@
 from crypt import methods
-import json
-
 from sqlalchemy import desc
 from app import app
 from middlewares import is_login
@@ -8,6 +6,7 @@ from flask import jsonify,make_response, request
 from main import db
 from models import Product as ProductModel
 from validators.product_validator import ProductValidation
+from werkzeug.datastructures import ImmutableMultiDict
 
 class Product:
    @app.route("/product",methods=["GET"])
@@ -64,7 +63,10 @@ class Product:
    @is_login
    def product_store(jwt_decode):
         try:
-            form = ProductValidation(request.form)
+            if not request.is_json:
+                form = ProductValidation(request.form)
+            else: 
+                form = ProductValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
@@ -110,7 +112,10 @@ class Product:
             if product == None:
                 return make_response(jsonify({"message" : "Not Found"}),404)
 
-            form = ProductValidation(request.form)
+            if not request.is_json:
+                form = ProductValidation(request.form)
+            else: 
+                form = ProductValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({

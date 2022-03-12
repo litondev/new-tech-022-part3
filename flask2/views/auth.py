@@ -55,7 +55,10 @@ class Auth:
     @app.route("/signup",methods=["POST"])
     def auth_signup():
         try:
-            form = SignupValidation(request.form)
+            if not request.is_json:
+                form = SignupValidation(request.form)
+            else: 
+                form = SignupValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
@@ -65,9 +68,15 @@ class Auth:
 
             salt = bcrypt.gensalt()
 
-            hashed = bcrypt.hashpw(bytes(request.form['password'].encode("utf-8")), salt)
+            hashed = bcrypt.hashpw(bytes(form.password.data.encode("utf-8")), salt)
 
-            db.session.add(User(request.form['name'],request.form['email'],hashed))
+            db.session.add(
+                User(
+                    form.name.data,
+                    form.email.data,
+                    hashed
+                )
+            )
 
             db.session.commit() 
 
@@ -85,14 +94,17 @@ class Auth:
     @app.route("/forgot-password",methods=["POST"])
     def auth_forgot_password():
         try:
-            form = ForgotPasswordValidation(request.form)
+            if not request.is_json:
+                form = ForgotPasswordValidation(request.form)
+            else: 
+                form = ForgotPasswordValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
                     "message" : form.errors[list(form.errors.keys())[0]][0]
                 }),422)
 
-            user = User.query.filter_by(email=request.form['email']).first()
+            user = User.query.filter_by(email=form.email.data).first()
             
             if user == None:
                 return make_response(jsonify({"message" : "Email tidak ditemukan"}),422)
@@ -114,27 +126,30 @@ class Auth:
     @app.route("/reset-password",methods=["POST"])
     def auth_reset_password():
         try:
-            form = ResetPasswordValidation(request.form)
+            if not request.is_json:
+                form = ResetPasswordValidation(request.form)
+            else: 
+                form = ResetPasswordValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
                     "message" : form.errors[list(form.errors.keys())[0]][0]
                 }),422)
 
-            user = User.query.filter_by(email=request.form['email']).first()
+            user = User.query.filter_by(email=form.email.data).first()
             
             if user == None:
                 return make_response(jsonify({"message" : "Email tidak ditemukan"}),422)
             
-            if(user.remember_token != request.form['token']):
+            if(user.remember_token != form.token.data):
                 return make_response(jsonify({"message" : "Token tidak valid"}),422)
 
-            if(request.form['password'] != request.form['password_confirmation']):
+            if(form.password.data != form.password_confirmation.data):
                 return make_response(jsonify({"message" : "Password tidak sama"}),422)
 
             salt = bcrypt.gensalt()
 
-            hashed = bcrypt.hashpw(bytes(request.form['password'].encode("utf-8")), salt)
+            hashed = bcrypt.hashpw(bytes(form.password.data.encode("utf-8")), salt)
 
             user.password = hashed;
 
@@ -154,7 +169,9 @@ class Auth:
     @is_login	
     def auth_me(jwt_decode):
         print(jwt_decode)
+
         user = User.query.filter_by(id=jwt_decode['sub']).first()
+        
         return make_response(jsonify(user.as_dict()), 200)
 
     @app.route("/logout",methods=["POST"])
