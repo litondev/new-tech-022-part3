@@ -1,15 +1,25 @@
 import { createStore } from 'vuex'
 
-const store = createStore({
-    state () {
+const user = {
+    namespaced: true,
+    state(){
         return {
-            count: 0
+            data : JSON.parse(localStorage.getItem('user') || null)
+        };        
+    },
+    mutations : {
+        setUser (state,payload) {
+            localStorage.setItem("user",JSON.stringify(payload)) 
+            state.data = payload
         }
     },
-    mutations: {
-        increment (state) {
-            state.count++
-        }
+
+}
+
+const store = createStore({
+    namespaced: true,
+    modules : {
+        user : user
     }
 })
 

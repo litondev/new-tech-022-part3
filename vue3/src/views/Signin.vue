@@ -63,15 +63,26 @@
 <script>
 import { inject ,ref } from "vue";
 import { Field, useForm } from 'vee-validate';
+import { useRouter } from "vue-router";
+import { useStore } from 'vuex'
 
 export default {
+    created(){
+        console.log(this);
+
+        console.log("Created");
+    },
+
     components: {
         Field,
     },
+    
     setup() {
     //    const vueApp = inject('appName');
        const $axios = inject('axios')
        const $toast = inject('toast')
+       const $router = useRouter();
+       const $store  = useStore();
 
        const isLoadingForm = ref(false);
        const email = ref('');
@@ -91,12 +102,11 @@ export default {
                 password : password.value,
                 email : email.value,        
             }).then(res => {     
-                console.log(res)  
-                // token.value = res.data.access_token;
-                // user.value = res.data.user;
-                // tokewindow.localStorage.setItem("token",res.data.access_token);
-                // console.log(res);
-                // nuxtApp.$router.push("/profil");
+                localStorage.setItem("token",res.data.token);
+
+                $store.commit("user/setUser",res.data.user)
+                
+                $router.push("/profil");
             })
             .catch(err => {
                 isLoadingForm.value = false;
@@ -119,11 +129,6 @@ export default {
             isLoadingForm,
             errors
         }
-    },
-    created(){
-        console.log(this);
-
-        console.log("Created");
     }
 }
 </script>

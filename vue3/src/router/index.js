@@ -36,8 +36,14 @@ const router = createRouter({
   ]
 })
 
-router.beforeEach((to, from) => {
-  console.log("Oke");
+router.beforeEach((to, from,next) => {
+  if(['profil','product'].includes(to.name) && !localStorage.getItem("token")){
+		next({path: "/signin"});
+	}else if(['signin','signup','reset-password','forgot-password'].includes(to.name) && localStorage.getItem("token")){			
+		next({path: "/profil"});
+	}else{
+		next();
+	}
 });
 
 export default router
