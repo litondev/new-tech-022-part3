@@ -3,9 +3,9 @@
 
 - migrate 
  -> flask db init (AKAN MEMBUAT FOLDER MIGRATION)
- -> flask dbmigrate (AKAN MIGRATE FOLDER MIGRATION YANG TELAH DIBUAT)
+ -> flask db migrate (AKAN MIGRATE FOLDER MIGRATION YANG TELAH DIBUAT)
  -> flask db upgrade (lalu upgrade kalau ngak di upgrade maka di database juga ngak akan berubah)
- -> flask db downgrade (mengahapus semua ulang)
+ -> UNTUK MENGAHPUS DATA PADA TABLE HAPUS MANUAL :)
 
 - seed 
  -> python3 app.py seed run

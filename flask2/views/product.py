@@ -1,5 +1,7 @@
 from crypt import methods
 import json
+
+from sqlalchemy import desc
 from app import app
 from middlewares import is_login
 from flask import jsonify,make_response, request
@@ -11,7 +13,52 @@ class Product:
    @app.route("/product",methods=["GET"])
    @is_login
    def product_index(jwt_decode):
-       return "Index"
+       page = request.args.get("page") or 1
+       search = request.args.get("search") 
+
+       if search != None :
+         last_id_search = ProductModel.query.filter(
+           ProductModel.title.ilike('%'+search+"%")
+         ).order_by(
+            ProductModel.id.desc()
+         ).first()
+
+         total_products = last_id_search.id;
+                 
+         if(int(page) == 1 or int(page) == 0):
+            current_page = (int(total_products)) + 1
+         else:
+            current_page = (int(total_products) - ((int(page)-1)*10))
+
+         products = ProductModel.query.filter(
+            ProductModel.id <= current_page,
+            ProductModel.title.ilike('%'+search+"%")
+         ).order_by(
+            ProductModel.id.desc()
+         ).limit(10).all()
+
+         return make_response(jsonify({
+            "page" : page,
+            "data" : [p.as_dict() for p in products]
+         }))
+       else:
+        total_products = ProductModel.query.count();
+
+        if(int(page) == 1 or int(page) == 0):
+            current_page = (int(total_products)) + 1
+        else:
+            current_page = (int(total_products) - ((int(page)-1)*10))
+
+        products = ProductModel.query.filter(
+            ProductModel.id <= current_page 
+        ).order_by(
+            ProductModel.id.desc()
+        ).limit(10).all()
+
+        return make_response(jsonify({
+            "page" : page,
+            "data" : [ p.as_dict() for p in products ],
+        }))
     
    @app.route("/product",methods=["POST"])
    @is_login
