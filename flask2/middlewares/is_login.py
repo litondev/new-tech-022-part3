@@ -11,13 +11,13 @@ def is_login(f):
            token = request.headers['Authorization']
  
        if not token:
-           return make_response(jsonify({'message': 'Authorization'}),422)
+           return make_response(jsonify({'message': 'Authorization'}),401)
        try:
            jwt_decode = jwt.decode(token.split(" ")[1], app.config['SECRET_KEY'], algorithms=["HS256"])
            kwargs["jwt_decode"] = jwt_decode
            # current_user = Users.query.filter_by(public_id=data['public_id']).first()
        except:
-           return make_response(jsonify({'message': 'Authorization'}),422)
+           return make_response(jsonify({'message': 'Authorization'}),401)
  
        return f(*args, **kwargs)
     return decorator

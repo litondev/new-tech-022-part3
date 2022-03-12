@@ -46,5 +46,8 @@ class Product(db.Model):
       self.price = price 
       self.description = description
  
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
     def __repr__(self):     
       return '<Product title={self.title} stock={self.stock} price={self.price} description={self.description}>'

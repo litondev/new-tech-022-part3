@@ -145,7 +145,6 @@ class Auth:
             app.logger.warning(e)
 
             return make_response(jsonify({"message" : "Terjadi Kesalahan"}),500)   
-        return make_response(jsonify({"message" : "Reset Password"}), 200)
     
     @app.route("/me",methods=["GET"])
     @is_login	
