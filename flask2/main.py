@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 import logging
-
+from flask_cors import CORS
 import os 
 
 load_dotenv()
@@ -12,6 +12,9 @@ app = Flask(
     static_url_path='', 
     static_folder='static'
 )
+
+CORS(app)
+
 logging.basicConfig(
     filename='logging.log', 
     level=logging.WARNING, 

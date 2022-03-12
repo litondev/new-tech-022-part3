@@ -10,24 +10,28 @@ import bcrypt
 import datetime 
 import jwt 
 from middlewares import is_login
+from werkzeug.datastructures import ImmutableMultiDict
 
 class Auth:
     @app.route("/signin",methods=["POST"])
     def auth_signin():
         try:
-            form = SigninValidation(request.form)
+            if not request.is_json:
+                form = SigninValidation(request.form)
+            else: 
+                form = SigninValidation(ImmutableMultiDict(request.get_json()))
 
             if not form.validate():
                 return make_response(jsonify({
                     "message" : form.errors[list(form.errors.keys())[0]][0]
                 }),422)
 
-            user = User.query.filter_by(email=request.form['email']).first()
+            user = User.query.filter_by(email=form.email.data).first()
             
             if user == None:
                 return make_response(jsonify({"message" : "Email tidak ditemukan"}),422)
 
-            if(bcrypt.checkpw(bytes(request.form['password'].encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
+            if(bcrypt.checkpw(bytes(form.password.data.encode("utf-8")),bytes(user.password.encode("utf-8"))) == False):
                 return make_response(jsonify({"message" : "Password tidak valid"}),422)
                     
             
