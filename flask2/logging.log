@@ -55,3 +55,105 @@
 2022-03-12 12:19:36,507 INFO werkzeug Thread-55 : 127.0.0.1 - - [12/Mar/2022 12:19:36] "POST /signin HTTP/1.1" 200 -
 2022-03-12 12:19:40,324 INFO werkzeug Thread-56 : 127.0.0.1 - - [12/Mar/2022 12:19:40] "OPTIONS /logout HTTP/1.1" 200 -
 2022-03-12 12:19:40,338 INFO werkzeug Thread-57 : 127.0.0.1 - - [12/Mar/2022 12:19:40] "POST /logout HTTP/1.1" 200 -
+2022-03-16 13:01:31,384 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-16 13:01:31,392 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:01:40,583 INFO werkzeug Thread-3 : 127.0.0.1 - - [16/Mar/2022 13:01:40] "GET / HTTP/1.1" 200 -
+2022-03-16 13:01:40,794 INFO werkzeug Thread-4 : 127.0.0.1 - - [16/Mar/2022 13:01:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-16 13:02:26,793 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:02:26,912 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:03:15,536 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:03:15,658 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:03:44,541 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:03:44,758 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:04:09,409 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:04:09,520 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:04:18,790 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:04:18,912 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:04:56,992 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:04:57,162 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:22,961 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:23,107 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:34,391 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:34,506 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:39,647 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:39,778 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:44,018 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:44,142 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:46,139 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:46,271 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:48,333 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:48,449 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:05:53,472 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:05:53,592 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:06:08,936 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:06:09,054 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:06:22,335 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:06:22,540 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:06:26,594 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:06:26,716 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:06:58,571 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:06:58,684 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:07:00,758 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:07:00,893 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:08:01,777 INFO werkzeug Thread-3 : 127.0.0.1 - - [16/Mar/2022 13:08:01] "[31m[1mDELETE / HTTP/1.1[0m" 405 -
+2022-03-16 13:08:05,509 INFO werkzeug Thread-4 : 127.0.0.1 - - [16/Mar/2022 13:08:05] "GET / HTTP/1.1" 200 -
+2022-03-16 13:08:11,019 INFO werkzeug Thread-5 : 127.0.0.1 - - [16/Mar/2022 13:08:11] "[33mGET /signin HTTP/1.1[0m" 404 -
+2022-03-16 13:08:15,910 INFO werkzeug Thread-6 : 127.0.0.1 - - [16/Mar/2022 13:08:15] "[31m[1mPOST /signin HTTP/1.1[0m" 422 -
+2022-03-16 13:08:24,912 INFO werkzeug Thread-7 : 127.0.0.1 - - [16/Mar/2022 13:08:24] "[31m[1mPOST /signin HTTP/1.1[0m" 422 -
+2022-03-16 13:08:33,102 INFO werkzeug Thread-8 : 127.0.0.1 - - [16/Mar/2022 13:08:33] "POST /signin HTTP/1.1" 200 -
+2022-03-16 13:08:48,136 INFO werkzeug Thread-9 : 127.0.0.1 - - [16/Mar/2022 13:08:48] "GET /me HTTP/1.1" 200 -
+2022-03-16 13:08:55,529 INFO werkzeug Thread-10 : 127.0.0.1 - - [16/Mar/2022 13:08:55] "GET /product HTTP/1.1" 200 -
+2022-03-16 13:09:09,912 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:09:10,050 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:09:11,856 INFO werkzeug Thread-3 : 127.0.0.1 - - [16/Mar/2022 13:09:11] "GET /product HTTP/1.1" 200 -
+2022-03-16 13:09:17,586 INFO werkzeug Thread-4 : 127.0.0.1 - - [16/Mar/2022 13:09:17] "GET /product?page=20 HTTP/1.1" 200 -
+2022-03-16 13:09:22,484 INFO werkzeug Thread-5 : 127.0.0.1 - - [16/Mar/2022 13:09:22] "GET /product?page=10 HTTP/1.1" 200 -
+2022-03-16 13:09:27,299 INFO werkzeug Thread-6 : 127.0.0.1 - - [16/Mar/2022 13:09:27] "GET /product?page=0 HTTP/1.1" 200 -
+2022-03-16 13:09:33,657 INFO werkzeug Thread-7 : 127.0.0.1 - - [16/Mar/2022 13:09:33] "GET /product?page=40 HTTP/1.1" 200 -
+2022-03-16 13:10:01,222 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:10:01,370 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:10:37,370 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:10:37,493 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:10:40,491 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:10:40,607 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:10:49,813 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:10:49,931 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:10:59,111 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:10:59,222 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:11:23,811 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:11:23,943 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:11:26,967 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:11:27,084 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:11:33,188 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:11:33,300 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:11:39,396 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:11:39,515 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:11:41,659 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:11:41,783 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:11:54,072 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:11:54,198 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:12:10,643 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:12:10,793 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:12:29,293 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:12:29,442 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:13:22,908 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:13:23,049 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-16 13:13:32,983 INFO werkzeug Thread-3 : 127.0.0.1 - - [16/Mar/2022 13:13:32] "GET /product?page=40 HTTP/1.1" 200 -
+2022-03-16 13:13:35,563 INFO werkzeug Thread-4 : 127.0.0.1 - - [16/Mar/2022 13:13:35] "GET /product?page=20 HTTP/1.1" 200 -
+2022-03-16 13:13:42,988 INFO werkzeug Thread-5 : 127.0.0.1 - - [16/Mar/2022 13:13:42] "GET /product?search=1 HTTP/1.1" 200 -
+2022-03-16 13:14:04,060 INFO werkzeug Thread-6 : 127.0.0.1 - - [16/Mar/2022 13:14:04] "[35m[1mGET /product?search=1?page=12 HTTP/1.1[0m" 500 -
+2022-03-16 13:14:09,004 INFO werkzeug Thread-7 : 127.0.0.1 - - [16/Mar/2022 13:14:09] "GET /product?search=1&page=12 HTTP/1.1" 200 -
+2022-03-16 13:14:23,584 INFO werkzeug Thread-8 : 127.0.0.1 - - [16/Mar/2022 13:14:23] "GET /product?search=1&page=2 HTTP/1.1" 200 -
+2022-03-16 13:14:57,673 INFO werkzeug Thread-9 : 127.0.0.1 - - [16/Mar/2022 13:14:57] "GET /product?search=1&page=25 HTTP/1.1" 200 -
+2022-03-16 13:15:02,146 INFO werkzeug Thread-10 : 127.0.0.1 - - [16/Mar/2022 13:15:02] "GET /product?search=1 HTTP/1.1" 200 -
+2022-03-16 13:15:27,405 INFO werkzeug Thread-11 : 127.0.0.1 - - [16/Mar/2022 13:15:27] "GET /product?search=1&page=22 HTTP/1.1" 200 -
+2022-03-16 13:15:32,889 INFO werkzeug Thread-12 : 127.0.0.1 - - [16/Mar/2022 13:15:32] "GET /product?search=1&page=12 HTTP/1.1" 200 -
+2022-03-16 13:15:37,738 INFO werkzeug Thread-13 : 127.0.0.1 - - [16/Mar/2022 13:15:37] "GET /product?search=1&page=22 HTTP/1.1" 200 -
+2022-03-16 13:15:53,123 INFO werkzeug Thread-14 : 127.0.0.1 - - [16/Mar/2022 13:15:53] "GET /product?search=1&page=12 HTTP/1.1" 200 -
+2022-03-16 13:16:10,073 INFO werkzeug Thread-15 : 127.0.0.1 - - [16/Mar/2022 13:16:10] "GET /product?search=1&page=11 HTTP/1.1" 200 -
+2022-03-16 13:16:16,016 INFO werkzeug Thread-16 : 127.0.0.1 - - [16/Mar/2022 13:16:16] "GET /product?search=1&page=11 HTTP/1.1" 200 -
+2022-03-16 13:16:16,207 INFO werkzeug Thread-17 : 127.0.0.1 - - [16/Mar/2022 13:16:16] "GET /product?search=1&page=11 HTTP/1.1" 200 -
+2022-03-16 13:16:17,160 INFO werkzeug Thread-18 : 127.0.0.1 - - [16/Mar/2022 13:16:17] "GET /product?search=1&page=1 HTTP/1.1" 200 -
+2022-03-16 13:16:26,164 INFO werkzeug Thread-19 : 127.0.0.1 - - [16/Mar/2022 13:16:26] "GET /product HTTP/1.1" 200 -
+2022-03-16 13:17:15,710 INFO werkzeug MainThread :  * Detected change in '/home/user/Project/new-tech-022-part3/flask2/views/product.py', reloading
+2022-03-16 13:17:15,831 INFO werkzeug MainThread :  * Restarting with stat

@@ -16,19 +16,37 @@ class Product:
        search = request.args.get("search") 
 
        if search != None :
-         last_id_search = ProductModel.query.filter(
-           ProductModel.title.ilike('%'+search+"%")
-         ).order_by(
-            ProductModel.id.desc()
-         ).first()
+        #  last_id_search = ProductModel.query.filter(
+        #    ProductModel.title.ilike('%'+search+"%")
+        #  ).order_by(
+        #     ProductModel.id.desc()
+        #  ).first()
 
-         total_products = last_id_search.id;
+        #  total_products = last_id_search.id;
                  
-         if(int(page) == 1 or int(page) == 0):
-            current_page = (int(total_products)) + 1
-         else:
-            current_page = (int(total_products) - ((int(page)-1)*10))
+        #  if(int(page) == 1 or int(page) == 0):
+        #     current_page = (int(total_products)) + 1
+        #  else:
+        #     current_page = (int(total_products) - ((int(page)-1)*10))
 
+         if(int(page) == 1 or int(page) == 0):
+            total_products = ProductModel.query.filter( 
+                ProductModel.title.ilike('%'+search+"%")
+            ).order_by(
+                ProductModel.id.desc()
+            ).first();
+
+            current_page = total_products.id
+         else:
+            current_products = ProductModel.query.filter(
+                ProductModel.title.ilike('%'+search+"%"),
+                ProductModel.id <= page 
+            ).order_by(
+                ProductModel.id.desc()
+            ).first()
+
+            current_page = current_products.id
+        
          products = ProductModel.query.filter(
             ProductModel.id <= current_page,
             ProductModel.title.ilike('%'+search+"%")
@@ -37,16 +55,32 @@ class Product:
          ).limit(10).all()
 
          return make_response(jsonify({
-            "page" : page,
+            "page" : current_page,
             "data" : [p.as_dict() for p in products]
          }))
-       else:
-        total_products = ProductModel.query.count();
+       else:           
+        # total_products = ProductModel.query.count();
 
+        # if(int(page) == 1 or int(page) == 0):
+        #     current_page = (int(total_products)) + 1
+        # else:
+        #     current_page = (int(total_products) - ((int(page)-1)*10))
+     
         if(int(page) == 1 or int(page) == 0):
-            current_page = (int(total_products)) + 1
+            total_products = ProductModel.query.order_by(
+                ProductModel.id.desc()
+            ).first();
+
+            current_page = total_products.id
         else:
-            current_page = (int(total_products) - ((int(page)-1)*10))
+            current_products = ProductModel.query.filter(
+                ProductModel.id <= page 
+            ).order_by(
+                ProductModel.id.desc()
+            ).first()
+
+            current_page = current_products.id
+        
 
         products = ProductModel.query.filter(
             ProductModel.id <= current_page 
@@ -55,7 +89,7 @@ class Product:
         ).limit(10).all()
 
         return make_response(jsonify({
-            "page" : page,
+            "page" : current_page,
             "data" : [ p.as_dict() for p in products ],
         }))
     
