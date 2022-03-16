@@ -14,28 +14,21 @@ class Product:
    def product_index(jwt_decode):
        page = request.args.get("page") or 1
        search = request.args.get("search") 
+        
+       ### 
+       # * NOTE UNTUK MENGETAHUI LAST PAGE DI FRONTEND CUKUP DENGAN
+        # MENGETAHUI DATA KALO PAGENYA KURANG DARI ATAU SAMA DENGAN 10 PASTI 
+        # ITU PAGE TERAKHR ATO BISA JUGA DI BANDINGKAN
+        # DENGAN PER PAGENYA KALO KURANG DARI ATO SAMA DENGAN PER_PAGENYA PASTI ITU PAGENYA
 
        if search != None :
-        #  last_id_search = ProductModel.query.filter(
-        #    ProductModel.title.ilike('%'+search+"%")
-        #  ).order_by(
-        #     ProductModel.id.desc()
-        #  ).first()
-
-        #  total_products = last_id_search.id;
-                 
-        #  if(int(page) == 1 or int(page) == 0):
-        #     current_page = (int(total_products)) + 1
-        #  else:
-        #     current_page = (int(total_products) - ((int(page)-1)*10))
-
-         if(int(page) == 1 or int(page) == 0):
-            total_products = ProductModel.query.filter( 
+         total_products = ProductModel.query.filter( 
                 ProductModel.title.ilike('%'+search+"%")
             ).order_by(
                 ProductModel.id.desc()
             ).first();
 
+         if(int(page) == 1 or int(page) == 0):
             current_page = total_products.id
          else:
             current_products = ProductModel.query.filter(
@@ -55,22 +48,16 @@ class Product:
          ).limit(10).all()
 
          return make_response(jsonify({
+            "first_page" : total_products.id,
             "page" : current_page,
             "data" : [p.as_dict() for p in products]
          }))
-       else:           
-        # total_products = ProductModel.query.count();
-
-        # if(int(page) == 1 or int(page) == 0):
-        #     current_page = (int(total_products)) + 1
-        # else:
-        #     current_page = (int(total_products) - ((int(page)-1)*10))
-     
-        if(int(page) == 1 or int(page) == 0):
-            total_products = ProductModel.query.order_by(
+       else:                
+        total_products = ProductModel.query.order_by(
                 ProductModel.id.desc()
             ).first();
 
+        if(int(page) == 1 or int(page) == 0):         
             current_page = total_products.id
         else:
             current_products = ProductModel.query.filter(
@@ -79,8 +66,7 @@ class Product:
                 ProductModel.id.desc()
             ).first()
 
-            current_page = current_products.id
-        
+            current_page = current_products.id        
 
         products = ProductModel.query.filter(
             ProductModel.id <= current_page 
@@ -89,6 +75,7 @@ class Product:
         ).limit(10).all()
 
         return make_response(jsonify({
+            "first_page" : total_products.id,
             "page" : current_page,
             "data" : [ p.as_dict() for p in products ],
         }))
